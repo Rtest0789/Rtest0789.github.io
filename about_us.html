@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Rose vi 店舗情報</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="about_us">
+
+<div id="container">
+
+<header>
+
+<!--<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="あなたのサイト名"></a></h1>
+-->
+<nav>
+<ul>
+<li><a href="index.html"><i class="fa-solid fa-house"></i>Top Page</a></li>
+<li><a href="about_us.html"><i class="fa-solid fa-map"></i>About Us</a></li>
+<li><a href="menu.html"><i class="fa-solid fa-martini-glass-citrus"></i>Menu</a></li>
+<li><a href="Arbeit.html"><i class="fa-solid fa-handshake"></i>Arbeit</a></li>
+<li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Cotact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+        <h2>About Us（店舗情報）</h2>
+        <div class="AU">
+            大阪 布施にあるDININNG&DARTS BARです。<br>
+            <span id="year"></span>5月25日で
+            <span id="current-date"></span>周年を迎えました。<br>
+            布施最大のロングカウンターが自慢です。<br>
+            様々なスタイルで楽しんでいただけるちょっとおしゃれなBARを目指して営業中ですっ！<br><br>
+            例えば・・・<br>会社帰りゆっくり・・・<br>お友達同士でワイワイ！<br>おひとりでしっとり大人な時間をーーー
+        </div>
+
+        <script>
+            //年、月、日の取得
+            const now = new Date();
+            const y = now.getFullYear();
+            const m = now.getMonth() + 1;//月は0から始まる
+            const d = now.getDate();
+
+            //周年前かどうかの判断
+            if(m==5){
+                if(d<25){
+                    const formattedDate2 = y-1 + '年';
+                    document.getElementById('year').innerHTML = formattedDate2;
+
+                    //周年数の表記
+                    const formattedDate = y - 2013;
+                    document.getElementById('current-date').innerHTML = formattedDate;
+                }
+                else{
+                    const formattedDate2 = y + '年';
+                    document.getElementById('year').innerHTML = formattedDate2;
+
+                    //周年数の表記
+                    const formattedDate = y - 2012;
+                    document.getElementById('current-date').innerHTML = formattedDate;
+                }
+            }
+            else if(m<5){
+
+                    const formattedDate2 = y-1 + '年';
+                    document.getElementById('year').innerHTML = formattedDate2;
+
+                //周年数の表記
+                const formattedDate = y - 2013;
+                document.getElementById('current-date').innerHTML = formattedDate;
+            }
+            else if(m>5){
+
+                const formattedDate2 = y + '年';
+                document.getElementById('year').innerHTML = formattedDate2;
+
+                //周年数の表記
+                const formattedDate = y - 2012;
+                document.getElementById('current-date').innerHTML = formattedDate;
+            }
+        </script>
+
+        <h2>営業情報</h2>
+        <div class="box1">
+
+        <table class="ta1">
+        <tr>
+            <th>営業時間</th>
+            <td>19:00〜翌5:00（ L.O. 4:45 ）</td>
+        </tr>
+        <tr>
+            <th>住所</th>
+            <td>〒577-0057 大阪府東大阪市足立新町10-14</td>
+        </tr>
+        <tr>
+            <th>アクセス</th>
+            <td>近鉄線布施駅より徒歩4分</td>
+        </tr>
+        <tr>
+            <th>TEL</th>
+            <td>06-6784-5101</td>
+        </tr>
+        <tr>
+            <th>お支払い方法</th>
+            <td>現金のみ</td>
+        </tr>
+        <tr>
+            <th>定休日</th>
+            <td>年中無休（ 元旦を除く ）</td>
+        </tr>
+        </table>
+
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps?output=embed&z=15&ll=34.668,135.5604497&q=Rose Vi" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+</main>
+
+<!--
+右側のSNSアイコン等の表示
+
+<ul class="icons">
+<li><a href="https://www.instagram.com/bar.rosevi/"><i class="fab fa-instagram"></i></a></li>
+</ul>
+-->
+
+<footer>
+<small>Copyright© Rose vi Sample Site</small>
+</footer>
+
+<!--以下の行はテンプレートの著作。削除しないで下さい。-->
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+
+</div>
+<!--/#container-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Masonry & imagesLoaded -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+
+<!-- Fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+</body>
+</html>
