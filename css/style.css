@@ -606,22 +606,16 @@ footer small {
 	}/*追加指定ここまで*/
 
 
-/*PAGE TOP（↑）設定*/
-
 /*class(boshuu)設定*/
 .boshuu{
   text-align: center;
   border-bottom: none;  /*下線を消す*/
 }
 
-/*class (MF)設定*/
-.MF{
-  text-align: center;
-  font-size: 150%;
-}
 
 
-/*--------------------------------------------------------------------------*/
+
+/*PAGE TOP (↑)設定--------------------------------------------------------------------------*/
 .pagetop-show {display: block;}
 
 /*ボタンの設定*/
