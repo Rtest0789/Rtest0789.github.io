@@ -2,13 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>Rose vi アルバイト</title>
+<title>Rose vi 店舗情報</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="ここにサイト説明を入れます">
 <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="arbeit">
+<body id="about_us">
 
 <div id="container">
 
@@ -28,34 +28,96 @@
 </header>
 
 <main>
-    <h2>Albeit アルバイト募集</h2>
-    
-    <h1 class="boshuu">現在スタッフ募集中です。</h1>
-    <h3 class="boshuu">詳しくは下記にお問い合わせください。</h3>
-    <h2 class="boshuu"><a href="tel:06-6784-5101">06-6784-5101</a></h2>
+        <h2>About Us（店舗情報）</h2>
+        <div class="AU">
+            大阪 布施にあるDININNG&DARTS BARです。<br>
+            <span id="year"></span>5月25日で
+            <span id="current-date"></span>周年を迎えました。<br>
+            布施最大のロングカウンターが自慢です。<br>
+            様々なスタイルで楽しんでいただけるちょっとおしゃれなBARを目指して営業中ですっ！<br><br>
+            例えば・・・<br>会社帰りゆっくり・・・<br>お友達同士でワイワイ！<br>おひとりでしっとり大人な時間をーーー
+        </div>
 
-    <div class="box1">
+        <script>
+            //年、月、日の取得
+            const now = new Date();
+            const y = now.getFullYear();
+            const m = now.getMonth() + 1;//月は0から始まる
+            const d = now.getDate();
 
-    <table class="ta1">
-    <tr>
-        <th>職種</th>
-        <td>バーテンダー、ホールスタッフ(配膳)、イベントスタッフ</td>
-    </tr>
-    <tr>
-        <th>給与</th>
-        <td>①時給1,200~1,700円　②時給1,500~2,000円</td>
-    </tr>
-    <tr>
-        <th>勤務時間</th>
-        <td>①18:30~0:00　②0:00~5:30</td>
-    </tr>
-    <tr>
-        <th>勤務地(住所)</th>
-        <td>大阪府東大阪市足立新町10-14</td>
-    </tr>
-    </table>
+            //周年前かどうかの判断
+            if(m==5){
+                if(d<25){
+                    const formattedDate2 = y-1 + '年';
+                    document.getElementById('year').innerHTML = formattedDate2;
 
-    </div>
+                    //周年数の表記
+                    const formattedDate = y - 2013;
+                    document.getElementById('current-date').innerHTML = formattedDate;
+                }
+                else{
+                    const formattedDate2 = y + '年';
+                    document.getElementById('year').innerHTML = formattedDate2;
+
+                    //周年数の表記
+                    const formattedDate = y - 2012;
+                    document.getElementById('current-date').innerHTML = formattedDate;
+                }
+            }
+            else if(m<5){
+
+                    const formattedDate2 = y-1 + '年';
+                    document.getElementById('year').innerHTML = formattedDate2;
+
+                //周年数の表記
+                const formattedDate = y - 2013;
+                document.getElementById('current-date').innerHTML = formattedDate;
+            }
+            else if(m>5){
+
+                const formattedDate2 = y + '年';
+                document.getElementById('year').innerHTML = formattedDate2;
+
+                //周年数の表記
+                const formattedDate = y - 2012;
+                document.getElementById('current-date').innerHTML = formattedDate;
+            }
+        </script>
+
+        <h2>営業情報</h2>
+        <div class="box1">
+
+        <table class="ta1">
+        <tr>
+            <th>営業時間</th>
+            <td>19:00〜翌5:00（ L.O. 4:45 ）</td>
+        </tr>
+        <tr>
+            <th>住所</th>
+            <td>〒577-0057 大阪府東大阪市足立新町10-14</td>
+        </tr>
+        <tr>
+            <th>アクセス</th>
+            <td>近鉄線布施駅より徒歩4分</td>
+        </tr>
+        <tr>
+            <th>TEL</th>
+            <td><a href="tel:06-6784-5101">06-6784-5101</a></td>
+        </tr>
+        <tr>
+            <th>お支払い方法</th>
+            <td>現金のみ</td>
+        </tr>
+        <tr>
+            <th>定休日</th>
+            <td>年中無休（ 元旦を除く ）</td>
+        </tr>
+        </table>
+
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps?output=embed&z=15&ll=34.668,135.5604497&q=Rose Vi" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
 </main>
 
@@ -66,7 +128,6 @@
 <ul class="icons">
 <li><a href="https://www.instagram.com/bar.rosevi/"><i class="fab fa-instagram"></i></a></li>
 </ul>
-
 
 <footer>
 <small>Copyright© Rose vi</small>
