@@ -543,7 +543,7 @@ footer small {
   	padding: 2px;		/*ボックス内の余白*/
   }
 }
-@media screen {
+@media screen and (min-width:700px) {
   .box1 {
     padding: 1rem 2rem;  /*上下、左右へのボックス内の余白*/
   }
