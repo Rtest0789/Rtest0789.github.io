@@ -539,7 +539,7 @@ footer small {
   margin-top: 2em;
   background: rgba(0,0,0,0.5);  /*背景色。0,0,0は黒のことで0.5は色が50%出た状態。*/
   color: #fff;  /*文字色*/
-/*  padding: 1rem 2rem;  /*上下、左右へのボックス内の余白*/
+  padding: 1rem 2rem;  /*上下、左右へのボックス内の余白*/
   border-radius: 10px;  /*角を丸くする指定*/
 }
 
