@@ -278,6 +278,10 @@ header nav i {
   background: #fff;  /*マウスオン時の背景色*/
   color: #000;  /*マウスオン時の文字色*/
 }
+.c a:hover{
+  background: #fff;
+  color: #000;
+}
 
 
 /*お知らせページ（new.html）
@@ -610,7 +614,7 @@ footer small {
 ---------------------------------------------------------------------------------------*/
 @media screen and(max-width: 500px) {
   .box1{
-    padding: 1rem 1rem;  /*上下、左右へのボックス内の余白*/
+    padding: 1rem 0.5rem;  /*上下、左右へのボックス内の余白*/
   }
   .ta1 th, .ta1 td{
   	padding: 2px;		/*ボックス内の余白*/
