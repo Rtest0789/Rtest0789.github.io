@@ -2,19 +2,19 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>Rose vi ホームページ</title>
+<title>Rose vi ニュース</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description">
+<meta name="description" content="ここにサイト説明を入れます">
 <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="home">
+<body id="new">
 
 <div id="container">
 
 <header>
-<!--Rose Viのロゴを入れる予定
-<h1 id="logo"><a href="index.html"><img src="images/logo.png"></a></h1>
+<!--
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="あなたのサイト名"></a></h1>
 -->
 <nav>
 <ul>
@@ -27,13 +27,66 @@
 
 </header>
 
-</div>
-
 <main>
 
+<section>
 
-<!--イベント情報掲示場-->
-<div class="new-top">
+    <h2>イベントスケジュール</h2>
+        <div class="box1">
+
+            <table class="ta1">
+            <tr>
+                <th>ひなまつり</th>
+                <td>2026年3月1日(日)〜3月3日(火)</td>
+            </tr>
+            <tr>
+                <th>さくら祭り</th>
+                <td>開催期間未定</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>開催期間未定</td>
+            </tr>
+            </table>
+
+        </div>
+
+</section>
+
+</main>
+
+<!--
+右側のSNSアイコン等の表示
+-->
+
+<ul class="icons">
+<li><a href="https://www.instagram.com/bar.rosevi/"><i class="fab fa-instagram"></i></a></li>
+</ul>
+
+
+<footer>
+<small>Copyright© Rose vi</small>
+</footer>
+
+
+
+ 
+</div>
+<!--/#container-->
+
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
 <p class="text">イベント情報掲示場</p>
 <p class="more"><a href="new.html">More</a></p>
 </div>
