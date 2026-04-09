@@ -397,7 +397,7 @@ footer small {
 	display: block;
 	position: fixed;  /*Copyrightを固定させる*/
 	right: 5px;  /*右からの配置場所*/
-	bottom: 60px;  /*下からの配置場所*/
+	bottom: 20px;  /*下からの配置場所*/
 	writing-mode: vertical-lr;  /*縦書き*/
 	opacity: 0.5;  /*透明度50%*/
 	letter-spacing: 0.2em;  /*文字間隔を少しだけ広く*/
