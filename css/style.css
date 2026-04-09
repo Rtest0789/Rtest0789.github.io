@@ -31,7 +31,7 @@
 	  
   --border: 1px solid rgba(255,255,255,0.5);  /*枠線の幅、線種、255,255,255は白のことで0.5は色が50%出た状態。*/
   
-  --header-size: 60px;  /*headerのサイズ*/
+  --header-size: 50px;  /*headerのサイズ*/
 
   --base-font: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;  /*フォント指定*/
 }
@@ -222,7 +222,7 @@ header nav ul li a:hover {
 header nav i {
   min-width: var(--header-size);  /*幅。冒頭のheader-sizeを読み込みます。*/
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 
@@ -377,7 +377,7 @@ body#new::before{
   text-shadow: 0px 0px 10px rgba(0,0,0,0.5);  /*アイコンが白なので、背景画像が白いと見えなくなるので少しだけ影を入れる*/
 }
 .icons i {
-	font-size: 50px;	/*アイコンサイズ*/
+	font-size: 40px;	/*アイコンサイズ*/
 }
 
 /*about_us-------------------------------------------------------------------------*/
