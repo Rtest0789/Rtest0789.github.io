@@ -353,7 +353,7 @@ body#menu::before {
 }
 
 body#arbeit::before{
-  --bg-image-url: url(../images/test_3.JPG);
+  --bg-image-url: url(../images/darts_beside.jpg);
 }
 
 /*ニュース(new.thml)の背景設定*/
@@ -499,35 +499,6 @@ footer small {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* 動画サムネ用ラッパー */
-.media-wrapper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-/* サムネ動画 */
-.thumb-video {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* 「▶」アイコン */
-.video-badge {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background: #ff0000;  /*背景色*/
-  color: #fff;  /*文字色*/
-  font-size: 12px;  /*アイコンのサイズ*/
-  width: 28px;  /*アイコンの幅*/
-  line-height: 28px;  /*高さ*/
-  text-align: center;
-  border-radius: 100px;  /*円形にする*/
-  pointer-events: none;
-}
-
 /*------------------------------------------------------------------------------------
     画面幅がスマホの時
 ---------------------------------------------------------------------------------------*/
@@ -538,6 +509,10 @@ footer small {
   .ta1 th, .ta1 td{
   	padding: 2px;		/*ボックス内の余白*/
   }
+  body#arbeit::before{
+    --bg-image-url: url(../images/darts_vertical.jpg);
+  }
+
 }
 @media screen and (min-width:700px) {
   .box1 {
