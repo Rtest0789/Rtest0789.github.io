@@ -342,23 +342,22 @@ body::before {
   z-index: -1;
 }
 
-/*店舗情報（about_us.html）の背景画像*/
 body#about_us::before {
-  --bg-image-url: url(../images/test_1.JPG);
+  --bg-image-url: url(../images/misemae.jpeg);
 }
 
-/*メニュー（menu.html）の背景画像*/
 body#menu::before {
-  --bg-image-url: url(../images/test_2.JPG);
+  background: url(../images/sakadana.jpeg) no-repeat center right / cover;
+  opacity: 0.6;
 }
 
 body#arbeit::before{
-  --bg-image-url: url(../images/darts_beside.jpg);
+  background: url(../images/darts_beside.jpg)no-repeat center left / cover;
+  opacity: 0.6;
 }
 
-/*ニュース(new.thml)の背景設定*/
 body#new::before{
-  --bg-image-url: url(../images/test_4.jpg);
+  background: url(../images/Carsberg.jpeg)no-repeat center left / cover;
 }
 
 
@@ -508,9 +507,6 @@ footer small {
   }
   .ta1 th, .ta1 td{
   	padding: 2px;		/*ボックス内の余白*/
-  }
-  body#arbeit::before{
-    --bg-image-url: url(../images/darts_vertical.jpg);
   }
 
 }
