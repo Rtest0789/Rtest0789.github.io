@@ -36,53 +36,45 @@
 /*１枚目画像*/
 @media screen and (max-width:700px) { 
 	.slide1 {
-	background: url('../images/darts_vertical.jpg') no-repeat center center / cover;	/*１枚目の背景画像の読み込み*/
+	background: url('../images/misemae.jpeg') no-repeat center center / cover;	/*１枚目の背景画像の読み込み*/
 }
 
 }
+
 .slide1 {
-	background: url('../images/darts_beside.jpg') no-repeat center center / cover;	/*１枚目の背景画像の読み込み*/
-	
+	background: url('../images/misemae.jpeg') no-repeat center center / cover;	/*１枚目の背景画像の読み込み*/
 }
 
-/*２枚目画像*/
 .slide2 {
-	background: url('../images/test_2.JPG') no-repeat center center / cover;	/*２枚目の背景画像の読み込み*/
+	background: url('../images/Carsberg.jpeg') no-repeat center left / cover;	/*２枚目の背景画像の読み込み*/
 }
 
-/*３枚目画像*/
 .slide3 {
-	background: url('../images/test_3.JPG') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
+	background: url('../images/sakadana.jpeg') no-repeat center right / cover;	/*３枚目の背景画像の読み込み*/
 }
 
-/*4枚目画像*/
 .slide4 {
-	background: url('../images/test_4.jpg') no-repeat center center / cover;	/*4枚目の背景画像の読み込み*/
+	background: url('../images/darts_beside.jpg') no-repeat center left / cover;	/*4枚目の背景画像の読み込み*/
 }
-
 
 
 /*端末を縦向きにした際に、読み込む画像を変更したい場合はここで指定します*/
 @media (orientation: portrait) {
 
-/*１枚目画像*/
 .slide1 {
-	background-image: url('../images/darts_vertical.jpg');	/*縦向き専用の画像をここで設定します*/
+	background-image: url('../images/misemae.jpeg');
 }
 
-/*2枚目画像*/
 .slide2 {
-	background-image: url('../images/test_2.JPG');	/*縦向き専用の画像をここで設定します*/
+	background: url('../images/Carsberg.jpeg') no-repeat center left / cover;
 }
 
-/*3枚目画像*/
 .slide3 {
-	background-image: url('../images/test_3.JPG');	/*縦向き専用の画像をここで設定します*/
+	background: url('../images/sakadana.jpeg') no-repeat center left / cover;
 }
 
-/*4枚目画像*/
 .slide4 {
-	background-image: url('../images/test_4.jpg') ;	/*縦向き専用の画像をここで設定します*/
+	background: url('../images/darts_vertical.jpg') no-repeat center left / cover;
 }
 
-}/*追加指定ここまで*/
+}
