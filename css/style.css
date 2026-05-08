@@ -361,6 +361,8 @@ body#new::before{
 }
 
 
+
+
 /*SNSアイコン
 ---------------------------------------------------------------------------*/
 .icons {
@@ -508,6 +510,24 @@ footer small {
   .ta1 th, .ta1 td{
   	padding: 2px;		/*ボックス内の余白*/
   }
+
+body#about_us::before {
+  --bg-image-url: url(../images/misemae_2.jpeg);
+}
+
+body#menu::before {
+  background: url(../images/sakadana.jpeg) no-repeat center right / cover;
+  opacity: 0.6;
+}
+
+body#arbeit::before{
+  background: url(../images/darts_beside.jpg)no-repeat center left / cover;
+  opacity: 0.6;
+}
+
+body#new::before{
+  background: url(../images/Carsberg_2.jpeg)no-repeat center left / cover;
+}
 
 }
 @media screen and (min-width:700px) {
