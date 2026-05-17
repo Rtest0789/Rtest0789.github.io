@@ -70,11 +70,11 @@
 }
 
 .slide3 {
-	background: url('../images/sakadana.jpeg') no-repeat center left / cover;
+	background: url('../images/sakadana.jpeg') no-repeat center center / cover;
 }
 
 .slide4 {
-	background: url('../images/darts_vertical.jpg') no-repeat center left / cover;
+	background: url('../images/darts_vertical.jpg') no-repeat center center / cover;
 }
 
 }
