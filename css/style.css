@@ -521,7 +521,7 @@ body#menu::before {
 }
 
 body#arbeit::before{
-  background: url(../images/darts_vertical.jpg)no-repeat center left / cover;
+  background: url(../images/darts_vertical.jpg)no-repeat center center / cover;
   opacity: 0.6;
 }
 
