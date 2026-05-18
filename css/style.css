@@ -343,7 +343,7 @@ body::before {
 }
 
 body#about_us::before {
-  --bg-image-url: url(../images/misemae_2.jpeg);
+  --bg-image-url: url(../images/misemae.jpeg);
 }
 
 body#menu::before {
@@ -357,7 +357,7 @@ body#arbeit::before{
 }
 
 body#new::before{
-  background: url(../images/Carsberg_2.jpeg)no-repeat center left / cover;
+  background: url(../images/Carsberg.jpeg)no-repeat center left / cover;
 }
 
 
@@ -521,7 +521,7 @@ body#menu::before {
 }
 
 body#arbeit::before{
-  background: url(../images/darts_beside.jpg)no-repeat center left / cover;
+  background: url(../images/darts_vertical.jpg)no-repeat center left / cover;
   opacity: 0.6;
 }
 
